@@ -1,0 +1,8 @@
+services:
+  - type: static
+    name: social-media-manager
+    env: static
+    buildCommand: ""
+    publishDir: frontend
+    pullRequestPreviewsEnabled: true
+    branch: main
