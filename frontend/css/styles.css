@@ -1,0 +1,168 @@
+/* Main Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 48px 0 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    height: 100vh;
+}
+
+.sidebar .nav-link {
+    font-weight: 500;
+    color: #ced4da;
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+    margin: 0.2rem 0;
+}
+
+.sidebar .nav-link:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar .nav-link.active {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar .nav-link .bi {
+    margin-right: 0.5rem;
+}
+
+/* Dashboard Styles */
+.dashboard-card {
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: transform 0.3s ease;
+    margin-bottom: 1.5rem;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+}
+
+.dashboard-card .card-header {
+    border-radius: 0.5rem 0.5rem 0 0;
+    font-weight: 600;
+}
+
+.dashboard-card .card-body {
+    padding: 1.5rem;
+}
+
+.stats-card {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.stats-card .stats-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.stats-card .stats-value {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.stats-card .stats-label {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* Post Styles */
+.post-card {
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.post-card .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.post-card .platform-badge {
+    font-size: 0.8rem;
+}
+
+.post-card .post-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.post-card .post-content {
+    padding: 1.25rem;
+}
+
+.post-card .post-stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 1.25rem;
+    background-color: #f8f9fa;
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.post-card .post-stat {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* Analytics Styles */
+.chart-container {
+    position: relative;
+    height: 400px;
+    margin-bottom: 2rem;
+}
+
+.analytics-card {
+    margin-bottom: 1.5rem;
+}
+
+.analytics-card .card-header {
+    font-weight: 600;
+}
+
+.analytics-card .analytics-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.analytics-card .analytics-label {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* Form Styles */
+.form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+    .sidebar {
+        position: static;
+        height: auto;
+        padding-top: 1rem;
+    }
+    
+    main {
+        margin-left: 0 !important;
+    }
+}
